@@ -1,0 +1,109 @@
+## 1Q
+def twoSum(nums: List[int] , target: int) -> List[int] :
+   output = []
+   for i in nums:
+        for j in nums:
+            if i+j ==target and nums.index(i) !=nums.index(j):
+                output.append(nums.index(i))
+                output.append(nums.index(j))
+                return output
+
+## 2Q
+from collections import Counter
+
+def removeElements(arr, n ,k ):
+  
+ # calculating frequency using counter function
+ 
+ freq = Counter(arr)
+ for i in range(n):
+
+     # print elements which appear more than or equal to K times
+     
+     if (freq[arr[i]] <= k):
+        print(arr[i] , end=" ")
+
+##3Q
+def find_index(arr , n , K):
+  
+  #traverse the array
+  for i in range(n):
+      if arr[i] == k:
+         return i
+
+      elif arr[i] > K:
+         return i
+
+# if all array elements are smaller 
+ return n
+
+##4Q
+def addOne(digits):
+ 
+# initialising an index ( digits of units)
+index = len(digits) -1
+
+#while the index is valid and the value at [index] == 9 set it as 0
+
+while (index >= 0 and degits[index] ==9):
+     digits[index] = 0
+     index -= 1
+
+#if index < 0 (if all digits were 9)
+if (index < 0):
+   # insert an one at bigining of the vector
+   digits.insert(0 , 1)
+
+   # else increment the value at index 
+   else:
+       digits[index]+=1 
+
+digits = [1,2,3]
+
+AddOne(digits)
+
+for digit in digits:
+    print(digit , end=" ")
+
+
+##5Q
+class solution:
+def merge(self , nums1: List[int 
+    k = m + n -1
+    i , j =m - 1 , n - 1
+    while j >= 0:
+         if i>=0:
+             nums1[k] = nums1[i]
+             i -= 1
+         else:
+              nums1[k] = nums2[j]
+               j -= 1
+         k -= 1
+
+##6Q
+def containsDuplicate(int[] , nums)
+    if (nums ==null and len(nums) == 0 ):
+       return false 
+   arrays.sort(nums):
+   int 1 = len(nums)
+   for i in range len(nums)
+        if (nums[i - 1] == nums[i]):
+           return true
+
+        else:
+            return false
+
+##7Q
+def pushZerosToEnd(arr , n)
+    count = 0
+
+    for i in range(n):
+        if arr[i] != 0:
+           arr[count] = arr[i]
+           count+= 1
+    while count < n:
+          arr[count] = 0
+          count += 1
+
+
+
